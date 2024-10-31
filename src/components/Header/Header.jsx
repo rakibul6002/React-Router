@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+import './Header.css'
 
 export default function Header() {
   return (
@@ -7,11 +8,11 @@ export default function Header() {
           LoGo
       </h2>
         <nav className=" flex items-center justify-center gap-5">
-          <Link to={'/'}>Home</Link>
-          <Link to={'/users'}>Users</Link>
-          <Link to={'/blogs'}>Blog</Link>
-          <Link to={'/about'}>About</Link>
-          <Link to={'/contact'}>Contact</Link>
+          <NavLink to={'/'}>Home</NavLink>
+          <NavLink to={'/users'}>Users</NavLink>
+          <NavLink to={'/blogs'}>Blog</NavLink>
+          <NavLink to={'/about'}>About</NavLink>
+          <NavLink to={'/contact'}>Contact</NavLink>
         </nav>
     </div>
   )
